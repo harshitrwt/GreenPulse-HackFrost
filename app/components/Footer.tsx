@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-xl font-bold">Stay Connected</h2>
-            <p className="mt-2">Join our newsletter to stay updated on our initiatives.</p>
+            <p className="mt-2">Join our newsletter to stay updated on our initiatives</p>
             <form className="mt-4">
               <input 
                 type="email" 
