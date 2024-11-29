@@ -304,10 +304,8 @@ const App: React.FC = () => {
           <span className="underline decoration-red-500 md:text-[80px]">Rising!</span>
           <span className="text-lg md:text-[50px]"> Carbon Emissions 😨</span>
         </h2>
-        <p className="mt-4 text-center text-sm md:text-lg">
-          Detailed content about carbon emissions
-        </p>
-        <p className="mt-4 text-center text-sm md:text-lg text-gray-700">
+        
+        <p className="mt-4 text-sm md:text-lg text-gray-700 items-center justify-center text-center mx-auto">
           Carbon emissions have been on the rise due to various factors,
           including industrialization, deforestation, and increased energy
           consumption. Efforts to reduce carbon footprints and transition to

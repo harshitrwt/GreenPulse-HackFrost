@@ -150,7 +150,7 @@ const Page = () => {
             style={{ zIndex: 1 }}
             
           >
-            <source src="/videos/bgvideo1.mp4" type="video/mp4" />
+            <source src="/videos/bgvideo2.mp4" type="video/mp4" />
               <p>not support the video tag.</p>
           </video>
           <div className="relative z-10">

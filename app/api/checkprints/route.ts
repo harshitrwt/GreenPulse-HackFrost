@@ -16,8 +16,8 @@ export async function POST(request: Request) {
 
     // Perform calculations
     const totalElectricityUsage = electricityUsageKwh * 12 * 0.5; // Assume 0.5 Kg CO2/Kwh
-    const totalTransportationUsage = transportationUsagePerMonth * 12 * 2.31; // Assume 2.31 Kg CO2/km
-    const totalWasteGeneration =  wasteGenerationPerMonth * 12 * 1;
+    const totalTransportationUsage = transportationUsagePerMonth * 12 * 0.17; // Assume 2.31 Kg CO2/km
+    const totalWasteGeneration =  wasteGenerationPerMonth * 12 * 1.5;  //assuming perkg
     const totalEmissionsFlight =
       shortFlights * 200 + longFlight * 1000; // Sample values for flights
     const dietaryChoiceEmission =

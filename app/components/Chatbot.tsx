@@ -70,10 +70,10 @@ const ChatPage = () => {
 
   return (
     <>
-    <div className=" text-xl md:text-[80px] text-[38px] font-bold text-center text-black md:mb-16 mb-7">Ask Green<span className="bg-green-500 ml-2">Pulse AI</span></div>
-    <p className=" cursive-font mx-auto text-justify justify-center items-center w-[77%] text-lg md:text-md font-semibold text-green-500  mb-5 bg-black px-12 py-5 rounded-5xl ">
+    <div className=" text-xl md:text-[80px] text-[30px] font-bold text-center text-black md:mb-16 mb-7">Ask Green<span className="bg-green-500 ml-2">Pulse AI</span></div>
+    {/* <p className=" cursive-font mx-auto text-justify justify-center items-center w-[77%] text-lg md:text-md font-semibold text-green-500  mb-5 bg-black px-12 py-5 rounded-5xl ">
   Prakriti, is your intelligent companion for all environmental queries. Prakriti, meaning nature in Hindi, empowers you with insights on sustainable living, conservation practices, and eco-friendly solutions. Whether you are looking for tips on reducing waste, understanding renewable energy, or exploring sustainable products, Prakriti AI is here to guide you towards a greener lifestyle. It provides personalized recommendations and valuable information to help you make informed choices for a healthier planet, Say Hi! to Prakriti.
-</p>
+</p> */}
       <div className="flex flex-col h-[60vh] md:h-screen bg-green-500 md:w-[170vh] w-[48vh] mx-auto mb-16  border-2 border-black" style={{backgroundImage: "url('https://images.unsplash.com/photo-1709147854339-b98a3abf8516?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlJTIwdHJlZXxlbnwwfHx8fDE2ODQ5MTYyNjI&amp;auto=format')", // Replace with your image URL
       backgroundSize: 'cover',
       backgroundPosition: 'center',}}>
@@ -145,33 +145,35 @@ const ChatPage = () => {
   {/* Background Image */}
   <div className="relative py-20 bg-green-600 h-[20vh] md:h-[50vh] flex flex-col md:flex-row justify-center items-center overflow-hidden">
 
-  <div
-    className="absolute inset-0 bg-cover bg-center opacity-30 w-[100%]"
-    style={{
-      backgroundImage:
-        "url('https://images.unsplash.com/photo-1709147854339-b98a3abf8516?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlJTIwdHJlZXxlbnwwfHx8fDE2ODQ5MTYyNjI&amp;auto=format')",
-    }}
-  ></div>
+<div
+  className="absolute inset-0 bg-cover bg-center opacity-30 w-[100%]"
+  style={{
+    backgroundImage:
+      "url('bgImg.png')",
+  }}
+></div>
 
-  {/* Text on Left */}
-  <div className="relative z-10 text-white text-center md:text-left md:w-1/2 p-2 md:p-4">
-    
-    <p className="cursive-font text-4xl mb-2">
-      The greatest threat to our planet is the belief that someone else will save it.
-    </p>
-    <p className="cursive-font text-lg ml-[70%]">Robert Swan</p>
-  </div>
-
-  {/* Image on Right */}
-  <div className="relative z-10 md:w-1/2 flex justify-center items-center p-2 md:p-4">
-    <img
-      src="robertSwan.png"
-      alt="Environmental Image"
-      className="rounded-2xl  max-w-full h-auto opacity-85"
-    />
-    
-  </div>
+{/* Text on Left */}
+<div className="relative z-10 text-white text-center md:text-left md:w-1/2 p-4">
+  <p className="cursive-font md:mt-0 mt-8 text-3xl md:text-4xl mb-2">
+    The greatest threat to our planet is the belief that someone else will save it.
+  </p>
+  <p className="cursive-font text-sm md:text-lg ml-0 md:ml-[70%]">
+    Robert Swan
+  </p>
 </div>
+
+{/* Image on Right */}
+<div className="relative z-10 md:w-1/2 flex justify-center items-center p-4">
+  <img
+    src="robertSwan.png"
+    alt="Environmental Image"
+    className="h-12 md:rounded-2xl max-w-full md:h-auto opacity-85 hidden md:block"
+  />
+</div>
+
+</div>
+
 
 
 

@@ -33,16 +33,20 @@ const HeroSection = () => {
             />
           </div>
           {/* Navigation Links */}
-          <nav className="flex-col md:flex md:flex-row md:space-x-4 md:mt-[-50px] mt-[5px] text-white ml-4 z-20">
-            <Link href="" className="hover:text-green-400">
-              News
-            </Link>
-            <Link href="https://github.com/itsharshitrwt" className="hover:text-green-500 ml-5 cursor-pointer">
-              <button className="p-3 bg-green-600 md:mt-[-20px] md:w-32 animate-pulse md:text-xl md:font-semibold cursor-pointer hover:text-green-600">
-                Star ⭐
-              </button>
-            </Link>
-          </nav>
+          <nav className="flex-col md:flex md:flex-row md:space-x-4 md:mt-[-50px] mt-[5px] text-white ml-4 z-20 cursor-pointer">
+  <Link href="https://example.com/news" className="hover:text-green-400 cursor-pointer">
+    News
+  </Link>
+  <Link
+    href="https://github.com/itsharshitrwt"
+    className="hover:text-green-500 ml-5 cursor-pointer"
+  >
+    <button className="p-3 bg-green-600 md:mt-[-20px] md:w-32 animate-pulse md:text-xl md:font-semibold cursor-pointer hover:text-green-600">
+      Star ⭐
+    </button>
+  </Link>
+</nav>
+
         </div>
       </div>
 
@@ -53,7 +57,7 @@ const HeroSection = () => {
           initial="hidden" // Start with the 'hidden' state
           animate="visible" // Animate to the 'visible' state
           variants={textAnimation} // Apply the animation defined above
-          className="mt-10 md:mt-0 text-6xl md:text-6xl md:font-bold mb-9 md:mb-3"
+          className="alfa-font mt-10 md:mt-0 text-5xl md:text-6xl md:font-bold mb-9 md:mb-3"
         >
           Take a Stand, Our Planet Is Under <span className="underline decoration-red-700 decoration-6 mb-3">Attack!</span>
         </motion.h1>
@@ -61,7 +65,7 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
           variants={textAnimation}
-          className="md:mt-6 text-lg md:text-xl mx-auto"
+          className="abril-font md:mt-6 text-lg md:text-xl mx-auto"
         >
           Join the battle to reclaim our planet and demand for a sustainable future!
         </motion.p>
@@ -69,7 +73,7 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
           variants={textAnimation}
-          className="text-lg md:text-xl hidden md:block"
+          className="abril-font text-lg md:text-xl hidden md:block"
         >
           Every action counts—whether it&apos;s reducing your carbon footprint, advocating for sustainable practices,
         </motion.p>
@@ -77,7 +81,7 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
           variants={textAnimation}
-          className="text-lg md:text-xl hidden md:block"
+          className="abril-font text-lg md:text-xl hidden md:block"
         >
           or demanding accountability from corporations. Join us in this urgent fight against carbon emissions.
         </motion.p>
@@ -85,9 +89,9 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
           variants={textAnimation}
-          className="text-lg md:text-xl mb-4"
+          className="abril-font text-lg md:text-xl mb-4"
         >
-          Together, we can reclaim our planet and ensure a livable future for generations to come.
+          Together, we can reclaim our planet and ensure a livable future for generations.
         </motion.p>
         <motion.a
           href="https://www.epa.gov/environmental-topics/greener-living"
