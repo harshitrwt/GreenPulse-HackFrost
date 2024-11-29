@@ -15,7 +15,7 @@
     "convex": "^1.17.3",
     "framer-motion": "^11.12.0",
     "groq-sdk": "^0.8.0",
-    "next": "14.0.1",
+    "next": "^14.0.3",
     "react": "^18",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
