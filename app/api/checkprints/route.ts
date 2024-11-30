@@ -4,7 +4,6 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    // Destructure form data from the request body
     const {
       electricityUsageKwh,
       transportationUsagePerMonth,
@@ -14,18 +13,18 @@ export async function POST(request: Request) {
       dietaryChoice,
     } = body;
 
-    // Perform calculations
-    const totalElectricityUsage = electricityUsageKwh * 12 * 0.5; // Assume 0.5 Kg CO2/Kwh
-    const totalTransportationUsage = transportationUsagePerMonth * 12 * 0.17; // Assume 2.31 Kg CO2/km
-    const totalWasteGeneration =  wasteGenerationPerMonth * 12 * 1.5;  //assuming perkg
+    
+    const totalElectricityUsage = electricityUsageKwh * 12 * 0.5; 
+    const totalTransportationUsage = transportationUsagePerMonth * 12 * 0.17; 
+    const totalWasteGeneration =  wasteGenerationPerMonth * 12 * 1.5;  
     const totalEmissionsFlight =
-      shortFlights * 200 + longFlight * 1000; // Sample values for flights
+      shortFlights * 200 + longFlight * 1000; 
     const dietaryChoiceEmission =
       dietaryChoice === 'vegan'
         ? 100
         : dietaryChoice === 'vegetarian'
         ? 300
-        : 500; // Sample values for dietary choices
+        : 500; 
 
     const totalYearlyEmissions =
       totalElectricityUsage +
@@ -34,7 +33,7 @@ export async function POST(request: Request) {
       totalWasteGeneration +
       dietaryChoiceEmission;
 
-    // Return calculated results
+    
     return NextResponse.json({
       totalElectricityUsage: {
         value: totalElectricityUsage.toFixed(2),

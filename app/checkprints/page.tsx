@@ -1,6 +1,5 @@
 
 "use client";
-
 import { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart, registerables } from "chart.js";
@@ -70,7 +69,7 @@ const Page = () => {
             throw new Error("Invalid response from the backend");
         }
 
-        // Ensure numeric data for the chart
+        
         const chartValues = [
             parseFloat(data.totalElectricityUsage.value),
             parseFloat(data.totalTransportationUsage.value),
@@ -106,9 +105,9 @@ const Page = () => {
 
         setResult(data);
 
-        // Toast notification logic
+        
         if (data.totalYearlyEmissions.value < 10000) {
-            toast.success("You are making the planet a safe place for living, ThankYou!!", {
+            toast.success("Your efforts contribute significantly to making our planet a safer and more sustainable place for future generations. Thank you!", {
                 position: "top-right",
                 autoClose: 5000,
             });
@@ -154,18 +153,18 @@ const Page = () => {
               <p>not support the video tag.</p>
           </video>
           <div className="relative z-10">
-            <h1 className="text-5xl font-bold m-6 text-center text-white">Carbon FootPrint Visualizer</h1>
-            <p className="text-5xl font-bold m-6 text-center text-white">@harshit_rwt</p>
+            <h1 className="text-5xl cursive-font font-bold m-6 text-center text-white">Carbon FootPrint Visualizer</h1>
+            <p className="text-5xl cursive-font font-bold m-6 text-center text-white">@harshit_rwt</p>
           </div>
         </div>
         <div className='flex flex-col md:flex-row gap-8 bg-gray-900 p-10 w-[95%]'>
         <div className='bg-white p-8 rounded-lg shadow-lg flex-1'>
-         <h1 className='text-3xl font-bold m-6 text-center'>Check your Carbon FootPrints</h1>
+         <h1 className='text-3xl cursive-font font-bold m-6 text-center'>Check your Carbon FootPrints</h1>
          <form onSubmit={handleSubmit} className='space-y-5'>
            <div className='flex flex-col'>
               <label className='mb-2'
               >Electricity Usage Kwh/month:</label>
-              <p className="text-gray-400">An avg person with a family uses ~(800-900)Kwh of energy ideally per month in US, based on this figure you can enter your electricity usage</p>
+              <p className="text-gray-400">An avg person with a family uses (800-900)Kwh of energy per month in US, (300-500)Kwh of energy per month in China, (70-120)Kwh of energy per month in India, (50-70)Kwh of energy per month in Central Africa, (300-500)Kwh of energy per month in Europe, (700-800)Kwh of energy per month in Australia, based on this figure you can enter your electricity usage</p>
               <input type='number' name='electricityUsageKwh' 
               value={formData.electricityUsageKwh} 
               onChange={handleChange}
@@ -204,7 +203,7 @@ const Page = () => {
               />
               <label className='mb-2'
               >Waste Generation Kg/month:</label>
-              <p className="text-gray-400">An avg person with a family can produces upto 70 kg of waste per month in US, You can enter your data refrencing this</p>
+              <p className="text-gray-400">An avg person with a family can produces upto 70 kg of waste per month in US, You can enter your data referencing this value.</p>
               <input type='number' name='wasteGenerationPerMonth' 
               value={formData.wasteGenerationPerMonth} 
               onChange={handleChange}
@@ -234,60 +233,60 @@ const Page = () => {
            </div>
          </form>
         </div>
-        {/*Results*/}
+        
         <div className='bg-white p-8 rounded-lg shadow-lg flex-1 '>
-          <h1 className='text-3xl font-bold mb-2'>Your Yearly Emissions Statistics</h1>
+          <h1 className='text-3xl cursive-font font-bold mb-2'>Your Yearly Emissions Statistics</h1>
           <Bar  data={chartData} options={chartOptions} />
           
           {
             result && (
               <div className='mt-8'>
-                <p className='text-2xl font-bold'>Air Travels</p>
+                <p className='text-2xl cursive-font font-bold'>Air Travels</p>
                 <p>
                   {result.totalEmissionsFlight.value}{''}
                   {result.totalEmissionsFlight.unit}
                 </p>
                 <br/>
-                <p className='text-2xl font-bold'>Electricity</p>
+                <p className='text-2xl cursive-font font-bold'>Electricity</p>
                 <p>
                   {result.totalElectricityUsage.value}{" "}
                   {result.totalElectricityUsage.unit}
                 </p>
                 <br/>
-                <p className='text-2xl font-bold'>Transportations</p>
+                <p className='text-2xl cursive-font  font-bold'>Transportations</p>
                 <p>
                   {result.totalTransportationUsage.value}{" "}
                   {result.totalTransportationUsage.unit}
                 </p>
                 <br/>
-                <p className='text-2xl font-bold'>Waste Generation</p>
+                <p className='text-2xl cursive-font font-bold'>Waste Generation</p>
                 <p>
                   {result.totalWasteGeneration.value}{" "}
                   {result.totalWasteGeneration.unit}
                 </p>
                 <br/>
-                <p className='text-2xl font-bold'>Dietary Choices</p>
+                <p className='text-2xl cursive-font font-bold'>Dietary Choices</p>
                 <p>
                   {result.dietaryChoiceEmission.value}{" "}
                   {result.dietaryChoiceEmission.unit}
                 </p>
                 <br/>
 
-                <p className='text-2xl font-bold'>
+                <p className='text-2xl cursive-font font-bold'>
                   TOTAL : {result.totalYearlyEmissions.value}{" "}
                   {result.totalYearlyEmissions.unit}
                 </p>
                 <br/>
                 
-                {result.totalYearlyEmissions.value < 10000 && (
-                  <p className='text-green-600 font-bold'>
-                    Great job!🌟 Your total emissions are below 10,000 kg/year! Keep up the fantastic work and keep making a positive impact on our planet! 🌍💚
+                {result.totalYearlyEmissions.value < 5000 && (
+                  <p className='text-green-600 cursive-font font-semibold border-2 border-black p-2 rounded-2xl'>
+                    Excellent work! 🌟 Your total emissions are under 5,000 kg/year—an impressive milestone! Keep striving for sustainability and contributing to a healthier planet! 🌍💚
                   </p>
                 )}
-                {result.totalYearlyEmissions.value > 10000 && (
-                  <p className='text-red-600 font-bold'>
-                    ⚠️ Alert: Your annual carbon emissions have surpassed 10,000 kg! Time to take actions for a healthier planet.
-                    <span className="text-red-400 font-semibold">We advice you to join some communities, you can find them in greenpulse join community section   <a href="/"><button className="text-green-600">visit back!</button></a></span>
+                {result.totalYearlyEmissions.value > 5000 && (
+                  <p className='text-red-600 font-semibold border-2 border-black p-2 rounded-2xl'>
+                    ⚠️ Alert: Your annual carbon emissions have surpassed 5,000 kg! Time to take actions for a healthier planet.
+                    <span className="text-red-600 cursive-font font-semibold">We advice you to join communities, you can find them in greenpulse join community section <a href="/"><button className="text-green-600 font-semibold cursive-font">visit back!</button></a></span>
 
                   </p>
                   

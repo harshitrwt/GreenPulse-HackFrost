@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* index.css or HeroSection.css */
 
 @keyframes fadeIn {
   from {
@@ -14,15 +13,14 @@
 }
 
 .animate-fade {
-  animation: fadeIn 1.5s ease-in forwards; /* Animation for the background */
+  animation: fadeIn 1.5s ease-in forwards; 
 }
 
 .animate-fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Transition for text elements */
+  transition: opacity 1s ease-in-out; 
 }
 
-/* Add this to your styles.css or a relevant CSS file */
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -33,11 +31,10 @@
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  animation: scroll 20s linear infinite; 
 }
 
 
-/* styles.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -65,14 +62,13 @@
 .scroll-container {
   display: flex;
   gap: 1rem;
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  scrollbar-width: none; /* For Firefox */
+  overflow-x: scroll; 
+  scrollbar-width: none; 
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Edge */
+  display: none; 
 }
-
 
 ::-webkit-scrollbar{
   width: 8px;

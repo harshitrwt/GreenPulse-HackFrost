@@ -1,12 +1,12 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion'; 
 import Link from 'next/link';
 
 const HeroSection = () => {
-  // Define the animation variants
+
   const textAnimation = {
-    hidden: { opacity: 0, y: 50 }, // Starting position (hidden, from below)
-    visible: { opacity: 1.5, y: 0, transition: { duration: 2 } }, // End position (fully visible, move to original position)
+    hidden: { opacity: 0, y: 50 }, 
+    visible: { opacity: 1.5, y: 0, transition: { duration: 2 } }, 
   };
 
   return (
@@ -23,9 +23,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       
-      <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 w-full h-38 z-20"> {/* Changed z-index to 20 */}
+      <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 w-full h-38 z-20"> 
         <div className="flex items-center justify-between w-full max-w-6xl mx-auto px-4 rounded-b-full">
-          <div className="flex items-center z-30"> {/* Changed z-index to 30 */}
+          <div className="flex items-center z-30"> 
             <img
               src="mainlogo.png" 
               alt="🌏 EcoClub"
@@ -34,7 +34,7 @@ const HeroSection = () => {
           </div>
           
           <nav className="flex-col md:flex md:flex-row md:space-x-4 md:mt-[-50px] mt-[5px] text-white ml-4 z-30 cursor-pointer">
-            <a href="https://example.com/news" className=" cursor-pointer">
+            <a href="https://www.unep.org/news-and-stories" className=" cursor-pointer">
               News
             </a>
             <a
@@ -104,8 +104,8 @@ const HeroSection = () => {
         >
           <motion.button 
             className="mt-6 px-12 py-5 bg-green-600 hover:bg-green-700 text-white font-semibold"
-            whileHover={{ scale: 1.1 }} // Optional hover effect
-            transition={{ duration: 0.3 }} // Smooth hover transition
+            whileHover={{ scale: 1.1 }} 
+            transition={{ duration: 0.3 }} 
           >
             Learn More
           </motion.button>
