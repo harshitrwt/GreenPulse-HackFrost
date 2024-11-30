@@ -319,6 +319,96 @@ const App: React.FC = () => {
           <AnimatedNumber value={22.63} label="billion metric T, 1990 Emissions" />
         </div>
       </section>
+      <div className="relative mt-20 flex justify-center items-center px-4 max-w-screen-xl mx-auto mb-20">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Left Box with Detailed Text */}
+    <div className="flex justify-center">
+      <motion.div
+        className="w-[64vh] md:h-[77vh] bg-white rounded-lg shadow-2xl flex flex-col items-center justify-center p-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h2 className="text-5xl font-bold text-green-600 mb-4">Top Articles</h2>
+        <video autoPlay loop muted className="h-[60%] w-full object-cover rounded-lg border-6 border-green-500">
+          <source src="/videos/bgvideo1.mp4" type="video/mp4" />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+        <blockquote className="text-lg italic text-gray-500 mt-4">
+          The Earth does not belong to us; we belong to the Earth.  Marlee Matlin
+        </blockquote>
+      </motion.div>
+    </div>
+
+    {/* Right Boxes with Motion */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-2">
+      {/* Right Box 1 - Carbon Emissions */}
+      <motion.div
+        className="bg-white p-4 rounded-lg shadow-2xl hover:bg-gray-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        <h2 className="text-xl font-bold text-green-600 mb-2">Leadership of India in Carbon Emission Reporting</h2>
+        <p className="text-sm text-gray-500">
+          India has emerged as a global leader in carbon emission reporting by securing a spot among the top three countries alongside Brazil and China.
+        </p>
+        <a href="https://egov.eletsonline.com/2024/09/india-among-top-3-countries-in-carbon-emission-reporting-reduction-report/" className="block">
+          <button className="bg-green-600 text-white mt-12 p-2 hover:bg-green-500">Read more</button>
+        </a>
+      </motion.div>
+
+      {/* Right Box 2 - Global Warming */}
+      <motion.div
+        className="bg-white p-4 rounded-lg shadow-2xl hover:bg-gray-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
+        <h2 className="text-xl font-bold text-green-600 mb-2"> 2024-25 Emissions Reduction Plan of China</h2>
+        <p className="text-sm text-gray-500">
+          China is focusing on energy conservation and CO2 reduction targets for high-emitting industries as part of its action plan for 2024-25.
+        </p>
+        <a href="https://www.china-briefing.com/news/china-energy-conservation-and-co2-reduction-plan-compliance-considerations-for-businesses/" className="block">
+          <button className="bg-green-600 text-white mt-12 p-2 hover:bg-green-500">Read more</button>
+        </a>
+      </motion.div>
+
+      {/* Right Box 3 - Rising Temperatures */}
+      <motion.div
+        className="bg-white p-4 rounded-lg shadow-2xl hover:bg-gray-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <h2 className="text-xl font-bold text-green-600 mb-2">Decarbonization Efforts in Heavy-Emitting Industries</h2>
+        <p className="text-sm text-gray-500">
+          A report discusses how six heavyemitting sectors are working towards decarbonization which is crucial for meeting global climate goals.
+        </p>
+        <a href="https://www.weforum.org/stories/2024/09/decarbonization-heavy-emitting-industries/" className="block">
+          <button className="bg-green-600 text-white mt-[70px] p-2 hover:bg-green-500">Read more</button>
+        </a>
+      </motion.div>
+
+      {/* Right Box 4 - Environmental Impact */}
+      <motion.div
+        className="bg-white p-4 rounded-lg shadow-2xl hover:bg-gray-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
+        <h2 className="text-xl font-bold text-green-600 mb-2">Global Carbon Emissions on the Rise Despite Progress</h2>
+        <p className="text-sm text-gray-500">
+          Despite advancements in electric vehicles and renewable energy thus global carbon emissions are projected to reach a new record in 2024 highlighting the urgent need for action.
+        </p>
+        <a href="https://theconversation.com/global-carbon-emissions-inch-upwards-in-2024-despite-progress-on-evs-renewables-and-deforestation-243133" className="block">
+          <button className="bg-green-600 text-white mt-12 p-2 hover:bg-green-500">Read more</button>
+        </a>
+      </motion.div>
+    </div>
+  </div>
+</div>
+
 
       <Impact />
       <Footer />

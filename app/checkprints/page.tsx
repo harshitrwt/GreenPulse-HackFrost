@@ -165,7 +165,7 @@ const Page = () => {
            <div className='flex flex-col'>
               <label className='mb-2'
               >Electricity Usage Kwh/month:</label>
-              <p className="text-gray-400">An avg person with a family uses in ~(800-900)Kwh of energy ideally /month, based on this idea you can enter your data</p>
+              <p className="text-gray-400">An avg person with a family uses ~(800-900)Kwh of energy ideally per month in US, based on this figure you can enter your electricity usage</p>
               <input type='number' name='electricityUsageKwh' 
               value={formData.electricityUsageKwh} 
               onChange={handleChange}
@@ -175,7 +175,7 @@ const Page = () => {
               />
               <label className='mb-2'
               >TransportationUsage Kg/month:</label>
-              <p className="text-gray-400">It includes all the cars bikes usage u have It ideally ranges b/w (350-400 kg/month for normal usage if u fall into this category fill that else if u use extensively enter your value)</p>
+              <p className="text-gray-400">If your typical usage falls within the range of 350-400 kg per month for cars and bikes, please enter that value. If you use your vehicles more extensively, kindly provide your specific usage amount.</p>
               <input type='number' name='transportationUsagePerMonth' 
               value={formData.transportationUsagePerMonth} 
               onChange={handleChange}
@@ -204,7 +204,7 @@ const Page = () => {
               />
               <label className='mb-2'
               >Waste Generation Kg/month:</label>
-              <p className="text-gray-400">An avg person with a family produces 70 kg of waste per month, You can enter your data refrencing this</p>
+              <p className="text-gray-400">An avg person with a family can produces upto 70 kg of waste per month in US, You can enter your data refrencing this</p>
               <input type='number' name='wasteGenerationPerMonth' 
               value={formData.wasteGenerationPerMonth} 
               onChange={handleChange}

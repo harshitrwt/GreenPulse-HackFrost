@@ -74,7 +74,7 @@ const ChatPage = () => {
     {/* <p className=" cursive-font mx-auto text-justify justify-center items-center w-[77%] text-lg md:text-md font-semibold text-green-500  mb-5 bg-black px-12 py-5 rounded-5xl ">
   Prakriti, is your intelligent companion for all environmental queries. Prakriti, meaning nature in Hindi, empowers you with insights on sustainable living, conservation practices, and eco-friendly solutions. Whether you are looking for tips on reducing waste, understanding renewable energy, or exploring sustainable products, Prakriti AI is here to guide you towards a greener lifestyle. It provides personalized recommendations and valuable information to help you make informed choices for a healthier planet, Say Hi! to Prakriti.
 </p> */}
-      <div className="flex flex-col h-[60vh] md:h-screen bg-green-500 md:w-[170vh] w-[48vh] mx-auto mb-16  border-2 border-black" style={{backgroundImage: "url('https://images.unsplash.com/photo-1709147854339-b98a3abf8516?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlJTIwdHJlZXxlbnwwfHx8fDE2ODQ5MTYyNjI&amp;auto=format')", // Replace with your image URL
+      <div className="flex flex-col h-[60vh] md:h-screen bg-green-500 md:w-[190vh] w-[48vh] mx-auto mb-16  border-2 border-black opacity-90 " style={{backgroundImage: "url('https://images.unsplash.com/photo-1709147854339-b98a3abf8516?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2hlJTIwdHJlZXxlbnwwfHx8fDE2ODQ5MTYyNjI&amp;auto=format')", // Replace with your image URL
       backgroundSize: 'cover',
       backgroundPosition: 'center',}}>
       

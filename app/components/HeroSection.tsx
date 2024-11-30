@@ -22,41 +22,42 @@ const HeroSection = () => {
       </video>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      {/* Navigation Bar */}
-      <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 w-full h-38 z-10">
+      
+      <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 w-full h-38 z-20"> {/* Changed z-index to 20 */}
         <div className="flex items-center justify-between w-full max-w-6xl mx-auto px-4 rounded-b-full">
-          <div className="flex items-center z-20">
+          <div className="flex items-center z-30"> {/* Changed z-index to 30 */}
             <img
-              src="mainlogo.png" // Replace with your logo URL
+              src="mainlogo.png" 
               alt="🌏 EcoClub"
               className="md:h-56 md:w-56 md:mt-[-70px] h-32 w-32 mr-2 text-3xl rounded-b-full"
             />
           </div>
-          {/* Navigation Links */}
-          <nav className="flex-col md:flex md:flex-row md:space-x-4 md:mt-[-50px] mt-[5px] text-white ml-4 z-20 cursor-pointer">
-  <Link href="https://example.com/news" className="hover:text-green-400 cursor-pointer">
-    News
-  </Link>
-  <Link
-    href="https://github.com/itsharshitrwt"
-    className="hover:text-green-500 ml-5 cursor-pointer"
-  >
-    <button className="p-3 bg-green-600 md:mt-[-20px] md:w-32 animate-pulse md:text-xl md:font-semibold cursor-pointer hover:text-green-600">
-      Star ⭐
-    </button>
-  </Link>
-</nav>
+          
+          <nav className="flex-col md:flex md:flex-row md:space-x-4 md:mt-[-50px] mt-[5px] text-white ml-4 z-30 cursor-pointer">
+            <a href="https://example.com/news" className=" cursor-pointer">
+              News
+            </a>
+            <a
+              href="https://github.com/itsharshitrwt"
+              className="text-white ml-5 cursor-pointer hiver:bg-green-600 transition-colors duration-200"
+            >
+              <button className="text-white p-3 bg-green-600 hover:bg-green-600 transition-colors duration-200 md:mt-[-20px] md:w-32 animate-pulse md:text-xl md:font-semibold cursor-pointer hover:text-white-600">
+                Star ⭐
+              </button>
+            </a>
+          </nav>
 
         </div>
       </div>
 
-      {/* Main Content */}
+
+      
       <div className="relative flex flex-col items-center justify-center h-full text-white text-center z-10">
-        {/* Animated Hero Title */}
+        
         <motion.h1
-          initial="hidden" // Start with the 'hidden' state
-          animate="visible" // Animate to the 'visible' state
-          variants={textAnimation} // Apply the animation defined above
+          initial="hidden" 
+          animate="visible" 
+          variants={textAnimation} 
           className="alfa-font mt-10 md:mt-0 text-5xl md:text-6xl md:font-bold mb-9 md:mb-3"
         >
           Take a Stand, Our Planet Is Under <span className="underline decoration-red-700 decoration-6 mb-3">Attack!</span>
