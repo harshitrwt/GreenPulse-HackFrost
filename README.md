@@ -2,8 +2,7 @@
 ## GreenPulse 💚
 GreenPulse is an exciting initiative that puts the power of environmental protection right in your hands. It helps you track your carbon footprint, connects you with a friendly AI that can answer your questions about the environment, and brings you together with like-minded communities passionate about making a difference. With the help of technology, GreenPulse is all about uniting people in the journey toward a healthier, more sustainable planet
 
-![IMAGE 1](https://github.com/user-attachments/assets/ae0f5c51-1c1b-4026-9fb2-c0a640b57a81)
-
+![Screenshot 2024-11-30 155632](https://github.com/user-attachments/assets/19cd7526-4449-431a-bd4e-06bb2fb6617f)
 
 ## Features 🍃
 
@@ -53,7 +52,7 @@ Contributions are welcomed from anyone passionate about making a difference! To 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
 
 ## Conclusion
 Thank you for exploring GreenPulse! Together, we can make a significant impact on our environment by understanding our carbon footprints and taking actionable steps towards sustainability. Whether you're looking to track your emissions or connect with others who share your passion for environmental safety, GreenPulse is here to support you on this journey
