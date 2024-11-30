@@ -55,5 +55,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
 
 ## Conclusion
-Thank you for exploring GreenPulse! Together, we can make a significant impact on our environment by understanding our carbon footprints and taking actionable steps towards sustainability. Whether you're looking to track your emissions or connect with others who share your passion for environmental safety, GreenPulse is here to support you on this journey
+Thank you for exploring GreenPulse! This project was born from a sleepless three-day journey of brainstorming ideas, and I’m thrilled to have chosen sustainability as the core focus. Building this from scratch, all on my own, has been a great Hackathon Experience so far. GreenPulse is here to help you understand your carbon footprint and take actionable steps towards a more sustainable future. Your interest in this project means a lot to me—together, we can make a positive impact on our planet.
 🤍🌿🍃✨️
