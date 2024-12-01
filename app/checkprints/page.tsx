@@ -106,7 +106,7 @@ const Page = () => {
         setResult(data);
 
         
-        if (data.totalYearlyEmissions.value < 10000) {
+        if (data.totalYearlyEmissions.value < 5000) {
             toast.success("Your efforts contribute significantly to making our planet a safer and more sustainable place for future generations. Thank you!", {
                 position: "top-right",
                 autoClose: 5000,
